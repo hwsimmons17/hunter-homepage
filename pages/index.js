@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Fade from "react-reveal/Fade";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -15,7 +18,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Hello from Hunter Simmons</h1>
+        <Fade left>
+          <h1>Hello from Hunter Simmons!</h1>
+        </Fade>
       </main>
     </div>
   );
