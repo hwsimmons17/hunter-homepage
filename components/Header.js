@@ -20,8 +20,8 @@ const Header = () => {
           <Nav className={styles.link}>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/socials">Socials</Nav.Link>
-            <Nav.Link href="/current-role">Current Role</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
+            <Nav.Link href="/projects">About</Nav.Link>
           </Nav>
         </Navbar>
       </Container>

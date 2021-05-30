@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Socials() {
   const router = useRouter();
 
   function handleClick(e) {
@@ -37,14 +37,11 @@ export default function Home() {
             early stage startup called <a>WorkPulse</a>.
           </p>
           <p>
-            <Button variant="primary" onClick={handleClick}>
+            <Button variant="primary" onClick={() => handleClick()}>
               More about me
             </Button>
           </p>
         </Jumbotron>
-        <div className={styles.right}>
-          <Image src="/building.svg" layout="fill" alt="me" />
-        </div>
       </main>
     </Container>
   );

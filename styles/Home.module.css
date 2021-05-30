@@ -1,6 +1,22 @@
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 75vh;
+}
+
+.left {
+  align-self: center;
+}
+
+.left h1 {
+  font-size: calc(14px + 51 * (100vw - 320px) / 1120) !important;
+}
+
+.left p {
+  font-size: calc(4px + 12 * (100vw - 320px) / 1120) !important;
+}
+
+.right {
+  position: relative;
 }
