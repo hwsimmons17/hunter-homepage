@@ -19,7 +19,7 @@ const Header = () => {
 
   const handleBrand = (e) => {
     e.preventDefault();
-    scroller.scrollTo("home", { duration: 500 });
+    scroller.scrollTo("home", { duration: 500, offset: -500 });
   };
 
   return (
@@ -41,6 +41,7 @@ const Header = () => {
               spy={true}
               smooth={false}
               duration={500}
+              offset={-500}
               className={styles.linkChild}
             >
               Home
@@ -75,7 +76,11 @@ const Header = () => {
             >
               About
             </Link>
-            <Button variant="outline-primary" onClick={handleClick}>
+            <Button
+              variant="outline-primary"
+              onClick={handleClick}
+              className={styles.button}
+            >
               Contact Me
             </Button>
           </Nav>

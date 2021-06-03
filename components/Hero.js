@@ -19,7 +19,11 @@ const Hero = ({ title, header, body, btnBody, btnLink, img }) => {
               <h1>{header}</h1>
               <p>{body}</p>
               <p>
-                <Button variant="primary" onClick={handleClick}>
+                <Button
+                  variant="primary"
+                  onClick={handleClick}
+                  className={styles.button}
+                >
                   {btnBody}
                 </Button>
               </p>
