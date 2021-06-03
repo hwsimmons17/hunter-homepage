@@ -6,16 +6,24 @@ import styles from "../styles/TopHero.module.css";
 
 const TopHero = () => {
   return (
-    <div className={styles.wrapper}>
+    <div>
       <Image src="/Waves.jpg" layout="fill" alt="waves" priority={true} />
-      <div className={styles.card}>
-        <Fade left duration={2000}>
-          <Card style={{ background: "none", border: "none" }}>
-            <Card.Body style={{ fontSize: 50 }} className="m-auto">
-              Welcome to my website!
-            </Card.Body>
-          </Card>
-        </Fade>
+      <div className={styles.wrapper}>
+        <div className={styles.card}>
+          <Fade left duration={2000}>
+            <Card
+              style={{ background: "none", border: "none" }}
+              className="m-auto"
+            >
+              <Card.Body
+                style={{ fontSize: 50 }}
+                className="m-auto text-align-center"
+              >
+                Welcome to my website!
+              </Card.Body>
+            </Card>
+          </Fade>
+        </div>
       </div>
     </div>
   );

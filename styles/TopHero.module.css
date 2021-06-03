@@ -2,13 +2,19 @@
   height: 100vh;
   width: 90vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: none;
-  padding: none;
+  text-align: center;
+  min-height: 100vh;
 }
 
 .card {
   width: 600px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }

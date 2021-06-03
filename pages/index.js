@@ -18,7 +18,7 @@ export default function Home() {
           name="description"
           content="This is a blog created by me, Hunter Simmons"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bank.svg" />
       </Head>
 
       <Element name="home">
