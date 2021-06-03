@@ -7,11 +7,17 @@ import {
   Container,
 } from "react-bootstrap";
 
-import { Link } from "react-scroll";
+import { Link, scroller } from "react-scroll";
 
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("clicked");
+    scroller.scrollTo("contact", { duration: 500 });
+  };
+
   return (
     <div className={styles.parent}>
       <Container>
@@ -60,6 +66,9 @@ const Header = () => {
             >
               About
             </Link>
+            <Button variant="outline-primary" onClick={handleClick}>
+              Contact Me
+            </Button>
           </Nav>
         </Navbar>
       </Container>

@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: 500px;
+}
+
+.button {
+  margin-bottom: 200px;
+}
+
+.form {
+  display: inline-block;
+}

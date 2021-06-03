@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Element } from "react-scroll";
 
 import { heroSection } from "../Assets/homeData";
+import Contact from "../components/Contact";
 import Hero from "../components/Hero.js";
 import styles from "../styles/Home.module.css";
 
@@ -28,6 +29,9 @@ export default function Home() {
       </Element>
       <Element name="about">
         <Hero {...heroSection} />
+      </Element>
+      <Element name="contact">
+        <Contact {...heroSection} />
       </Element>
     </>
   );

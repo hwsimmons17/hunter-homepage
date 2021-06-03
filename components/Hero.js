@@ -12,6 +12,7 @@ const Hero = ({ title, header, body, btnBody, btnLink, img }) => {
 
   return (
     <div>
+      <h1 className={styles.title}>{title}</h1>
       <Container>
         <div className={styles.main}>
           <div className={styles.left}>
