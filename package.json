@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "^5.0.1",
     "next": "10.2.3",

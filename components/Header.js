@@ -52,9 +52,10 @@ const Header = () => {
               spy={true}
               smooth={false}
               duration={500}
+              offset={-40}
               className={styles.linkChild}
             >
-              Socials
+              Summary
             </Link>
             <Link
               activeClass="active"
@@ -62,9 +63,10 @@ const Header = () => {
               spy={true}
               smooth={false}
               duration={500}
+              offset={-80}
               className={styles.linkChild}
             >
-              Timeline
+              Socials
             </Link>
             <Link
               activeClass="active"
@@ -74,7 +76,7 @@ const Header = () => {
               duration={500}
               className={styles.linkChild}
             >
-              About
+              Timeline
             </Link>
             <Button
               variant="outline-primary"

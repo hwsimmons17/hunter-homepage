@@ -11,7 +11,7 @@ const TopHero = () => {
       <div className={styles.card}>
         <Fade left duration={2000}>
           <Card style={{ background: "none", border: "none" }}>
-            <Card.Body style={{ fontSize: 50 }}>
+            <Card.Body style={{ fontSize: 50 }} className="m-auto">
               Welcome to my website!
             </Card.Body>
           </Card>
