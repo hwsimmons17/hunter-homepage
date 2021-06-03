@@ -74,6 +74,7 @@ const Header = () => {
               spy={true}
               smooth={false}
               duration={500}
+              offset={-80}
               className={styles.linkChild}
             >
               Timeline

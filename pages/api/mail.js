@@ -5,6 +5,8 @@ mail.setApiKey(process.env.SENDGRID_API_KEY);
 export default (req, res) => {
   const body = JSON.parse(req.body);
 
+  let errors = false;
+
   const message = `
     Name: ${body.name}\r\n
     Email: ${body.email}\r\n
@@ -19,7 +21,11 @@ export default (req, res) => {
     html: message.replace(/\r\n/g, "<br>"),
   };
 
-  mail.send(data);
+  if (body.name.trim() === "") errors = true;
+  if (body.email.trim() === "") errors = true;
+  if (body.message.trim() === "") errors = true;
 
-  res.status(200).json({ status: "ok" });
+  // mail.send(data);
+
+  res.status(200).json({ error: errors });
 };

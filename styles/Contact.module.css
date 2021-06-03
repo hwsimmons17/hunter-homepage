@@ -19,6 +19,6 @@
 
 .header {
   margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: calc(14px + 51 * (100vw - 320px) / 1120) !important;
+  margin-bottom: 60px;
+  font-size: 4em;
 }

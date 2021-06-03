@@ -5,6 +5,7 @@ import { heroSection } from "../Assets/homeData";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero.js";
 import Socials from "../components/Socials";
+import Timeline from "../components/Timeline";
 import TopHero from "../components/TopHero";
 import styles from "../styles/Home.module.css";
 
@@ -30,10 +31,10 @@ export default function Home() {
         <Socials />
       </Element>
       <Element name="about">
-        <Hero {...heroSection} />
+        <Timeline />
       </Element>
       <Element name="contact">
-        <Contact {...heroSection} />
+        <Contact />
       </Element>
     </>
   );
