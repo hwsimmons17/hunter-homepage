@@ -14,15 +14,24 @@ import styles from "../styles/Header.module.css";
 const Header = () => {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("clicked");
     scroller.scrollTo("contact", { duration: 500 });
+  };
+
+  const handleBrand = (e) => {
+    e.preventDefault();
+    scroller.scrollTo("home", { duration: 500 });
   };
 
   return (
     <div className={styles.parent}>
       <Container>
-        <Navbar bg="light" variant="light" className="justify-content-between">
-          <Navbar.Brand href="/" className={styles.brand}>
+        <Navbar
+          bg="light"
+          variant="light"
+          className="justify-content-between"
+          style={{ borderRadius: "0px 0px 10px 10px" }}
+        >
+          <Navbar.Brand onClick={handleBrand} className={styles.brand}>
             Hunter Simmons
           </Navbar.Brand>
           <Nav className={styles.link}>

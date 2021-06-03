@@ -4,23 +4,22 @@ import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container style={{ display: "flex", justifyContent: "center" }}>
       <div className={styles.wrapper}>
         <Form className={styles.form}>
-          <Form.Group controlId="formBasicEmail">
+          <h1 className={styles.header}>Contact Me</h1>
+          <Form.Group controlId="formBasicEmail" className={styles.formDiv}>
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">I'll send you an email</Form.Text>
           </Form.Group>
-
-          <Form.Group controlId="formBasicPassword">
+          <Form.Group controlId="formBasicPassword" className={styles.formDiv}>
             <Form.Label>Name</Form.Label>
-            <Form.Control type="password" placeholder="Enter name" />
-            <Form.Text className="text-muted">
-              I want to know who you are!
-            </Form.Text>
+            <Form.Control type="text" placeholder="Enter name" />
           </Form.Group>
-          <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Group
+            controlId="exampleForm.ControlTextarea1"
+            className={styles.formDiv}
+          >
             <Form.Label>Message</Form.Label>
             <Form.Control
               as="textarea"

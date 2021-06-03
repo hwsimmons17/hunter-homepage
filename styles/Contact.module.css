@@ -1,11 +1,24 @@
 .wrapper {
   max-width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
+  margin-top: 20px;
   margin-bottom: 200px;
 }
 
 .form {
   display: inline-block;
+}
+
+.formDiv {
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: calc(14px + 51 * (100vw - 320px) / 1120) !important;
 }

@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import { heroSection } from "../Assets/homeData";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero.js";
+import TopHero from "../components/TopHero";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       </Head>
 
       <Element name="home">
-        <Hero {...heroSection} />
+        <TopHero />
       </Element>
       <Element name="socials">
         <Hero {...heroSection} />

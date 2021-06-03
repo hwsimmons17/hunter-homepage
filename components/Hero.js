@@ -1,18 +1,17 @@
 import Image from "next/image";
-import Fade from "react-reveal/Fade";
 import { Container, Jumbotron, Button } from "react-bootstrap";
+import { scroller } from "react-scroll";
 
 import styles from "../styles/Home.module.css";
 
 const Hero = ({ title, header, body, btnBody, btnLink, img }) => {
   function handleClick(e) {
     e.preventDefault();
-    console.log("I was pressed");
+    scroller.scrollTo(btnLink, { duration: 500 });
   }
 
   return (
     <div>
-      <h1 className={styles.title}>{title}</h1>
       <Container>
         <div className={styles.main}>
           <div className={styles.left}>
