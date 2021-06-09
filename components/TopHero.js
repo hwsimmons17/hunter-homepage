@@ -7,7 +7,13 @@ import styles from "../styles/TopHero.module.css";
 const TopHero = () => {
   return (
     <div>
-      <Image src="/Waves.jpg" layout="fill" alt="waves" priority={true} />
+      <Image
+        src="/Waves.jpg"
+        layout="fill"
+        alt="waves"
+        priority={true}
+        className={styles.image}
+      />
       <div className={styles.wrapper}>
         <div className={styles.card}>
           <Fade left duration={2000}>

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .tester {
+    display: none;
+  }
+}

@@ -18,3 +18,11 @@
   text-align: center;
   min-height: 100vh;
 }
+
+@media (max-width: 500px) {
+  .image {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+  }
+}
