@@ -22,17 +22,17 @@ const Tester = () => {
               Home
             </Nav.Link>
           </Link>
-          <Link to="socials">
+          <Link to="socials" offset={-270}>
             <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
               Summary
             </Nav.Link>
           </Link>
-          <Link to="timeline">
+          <Link to="timeline" offset={-270}>
             <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
               Socials
             </Nav.Link>
           </Link>
-          <Link to="about">
+          <Link to="about" offset={-250}>
             <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
               Timeline
             </Nav.Link>
