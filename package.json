@@ -12,6 +12,7 @@
     "@zeit/next-css": "^1.0.1",
     "ansi-regex": "^6.0.0",
     "bootstrap": "^5.0.1",
+    "date-fns": "^2.22.1",
     "next": "10.2.3",
     "next-images": "^1.7.0",
     "popper.js": "^1.16.1",

@@ -2,9 +2,9 @@ import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import { Card } from "react-bootstrap";
 
-import styles from "../styles/TopHero.module.css";
+import styles from "../styles/Welcome.module.css";
 
-const TopHero = () => {
+const Welcome = () => {
   return (
     <div>
       <div className={styles.container}>
@@ -36,4 +36,4 @@ const TopHero = () => {
   );
 };
 
-export default TopHero;
+export default Welcome;

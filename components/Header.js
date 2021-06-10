@@ -6,8 +6,8 @@ import {
   FormControl,
   Container,
 } from "react-bootstrap";
-
-import { Link, scroller } from "react-scroll";
+import Link from "next/link";
+import { Link as Links, scroller } from "react-scroll";
 
 import styles from "../styles/Header.module.css";
 
@@ -32,52 +32,22 @@ const Header = () => {
           style={{ borderRadius: "0px 0px 10px 10px" }}
         >
           <Navbar.Brand onClick={handleBrand} className={styles.brand}>
-            Hunter Simmons
+            <Link href="/">Hunter Simmons</Link>
           </Navbar.Brand>
           <Nav className={styles.link}>
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={false}
-              duration={500}
-              offset={-500}
-              className={styles.linkChild}
-            >
-              Home
+            <Link href="/#summary">
+              <a className={styles.linkChild}>Summary</a>
             </Link>
-            <Link
-              activeClass="active"
-              to="socials"
-              spy={true}
-              smooth={false}
-              duration={500}
-              offset={-40}
-              className={styles.linkChild}
-            >
-              Summary
+            <Link href="/#blog" className={styles.linkChild}>
+              <a className={styles.linkChild}>Blog</a>
             </Link>
-            <Link
-              activeClass="active"
-              to="timeline"
-              spy={true}
-              smooth={false}
-              duration={500}
-              offset={-80}
-              className={styles.linkChild}
-            >
-              Socials
+            <Link href="/#socials" className={styles.linkChild}>
+              <a className={styles.linkChild}>Socials</a>
             </Link>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={false}
-              duration={500}
-              offset={-80}
-              className={styles.linkChild}
-            >
-              Timeline
+            <Link href="/#timeline" className={styles.linkChild}>
+              <a className={styles.linkChild} style={{ marginRight: "10px" }}>
+                Timeline
+              </a>
             </Link>
             <Button
               variant="outline-primary"
