@@ -8,6 +8,10 @@ const Timeline = () => {
       <div className={styles.wrapper}>
         <h1 className={styles.header}>Timeline</h1>
         <h3>2021</h3>
+        <p>
+          Started working full time for{" "}
+          <a href="https://workpulse.co">WorkPulse</a> 💪
+        </p>
         <p>Got engaged 💍</p>
         <p>Graduated from BYU with a degree in Economics 🎓</p>
         <p>
