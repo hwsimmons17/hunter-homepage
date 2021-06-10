@@ -10,7 +10,10 @@ const Timeline = () => {
         <h3>2021</h3>
         <p>
           Started working full time for{" "}
-          <a href="https://workpulse.co">WorkPulse</a> 💪
+          <a href="https://workpulse.co" target="_blank">
+            WorkPulse
+          </a>{" "}
+          💪
         </p>
         <p>Got engaged 💍</p>
         <p>Graduated from BYU with a degree in Economics 🎓</p>
