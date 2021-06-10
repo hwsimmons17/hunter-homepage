@@ -25,7 +25,7 @@ export default (req, res) => {
   if (body.email.trim() === "") errors = true;
   if (body.message.trim() === "") errors = true;
 
-  // mail.send(data);
+  mail.send(data);
 
   res.status(200).json({ error: errors });
 };

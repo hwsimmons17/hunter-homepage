@@ -27,13 +27,13 @@ const Contact = () => {
           setShowSuccess(true);
           setTimeout(function () {
             setShowSuccess(false);
-          }, 2000);
+          }, 3000);
         }
         if (data.error) {
           setShowFailure(true);
           setTimeout(function () {
             setShowFailure(false);
-          }, 2000);
+          }, 3000);
         }
       });
     Array.from(e.currentTarget.elements).forEach((field) => {
