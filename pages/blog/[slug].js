@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/Image";
+import Image from "next/image";
 import format from "date-fns/format";
 import parseISO from "date-fns/parseISO";
 import { Element } from "react-scroll";
