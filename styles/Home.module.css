@@ -36,7 +36,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
-    height: 70vh;
+    height: 80vh;
   }
   .left h1 {
     font-size: 2.5em;
@@ -46,6 +46,7 @@
     text-align: center;
   }
   .right {
-    height: 20vh;
+    height: 40vw;
+    align-self: center;
   }
 }

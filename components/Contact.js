@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
-import ReCAPTCHA from "react-google-recaptcha";
 
 import styles from "../styles/Contact.module.css";
 
@@ -64,11 +63,7 @@ const Contact = () => {
               name="message"
             />
           </Form.Group>
-          <ReCAPTCHA
-            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-            size="invisible"
-            ref={reRef}
-          />
+
           {showSuccess && (
             <Alert variant="success">Success! I will reply shortly.</Alert>
           )}
