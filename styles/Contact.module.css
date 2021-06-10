@@ -6,7 +6,9 @@
 
 .button {
   margin-top: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .form {
@@ -21,4 +23,11 @@
   margin-top: 10px;
   margin-bottom: 60px;
   font-size: 4em;
+}
+
+@media (max-width: 769px) {
+  .header {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
 }

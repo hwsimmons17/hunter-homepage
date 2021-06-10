@@ -37,7 +37,7 @@ const Tester = () => {
               Timeline
             </Nav.Link>
           </Link>
-          <Link>
+          <Link to="contact">
             <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
               Contact Me
             </Nav.Link>

@@ -7,13 +7,17 @@ import styles from "../styles/TopHero.module.css";
 const TopHero = () => {
   return (
     <div>
-      <Image
-        src="/Waves.jpg"
-        layout="fill"
-        alt="waves"
-        priority={true}
-        className={styles.image}
-      />
+      <div className={styles.container}>
+        <Image
+          src="/Waves.jpg"
+          layout="fill"
+          objectFit="cover"
+          alt="waves"
+          quality={70}
+          priority={true}
+          className={styles.image}
+        />
+      </div>
       <div className={styles.wrapper}>
         <div className={styles.card}>
           <Fade left duration={2000}>
@@ -21,10 +25,7 @@ const TopHero = () => {
               style={{ background: "none", border: "none" }}
               className="m-auto"
             >
-              <Card.Body
-                style={{ fontSize: 50 }}
-                className="m-auto text-align-center"
-              >
+              <Card.Body className={styles.text}>
                 Welcome to my website!
               </Card.Body>
             </Card>
