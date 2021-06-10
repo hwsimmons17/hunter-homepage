@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
+      <p style={{ textAlign: "center" }}>Copyright 2021</p>
     </>
   );
 }

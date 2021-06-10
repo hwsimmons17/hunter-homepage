@@ -34,9 +34,7 @@ const Blog = () => {
                 <Card.Subtitle className="mb-2 text-muted">
                   {format(parseISO(item.date), "MMMM do, uuu")}
                 </Card.Subtitle>
-                <Card.Text style={{ whiteSpace: "pre-wrap" }}>
-                  {item.description}
-                </Card.Text>
+                <Card.Text>{item.description}</Card.Text>
               </Card.Body>
             </Card>
           ))}

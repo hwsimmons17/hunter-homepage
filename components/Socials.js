@@ -72,7 +72,6 @@ const Socials = () => {
           </Card>
         </CardGroup>
       </div>
-      <p style={{ textAlign: "center" }}>Copyright 2021</p>
     </>
   );
 };
