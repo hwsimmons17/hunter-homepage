@@ -2,6 +2,8 @@
   max-width: 600px;
   margin: auto;
   margin-top: 50px;
+  padding: 30px;
+  padding-top: 0;
 }
 
 .header {
@@ -14,4 +16,10 @@
 .date {
   font-size: 1.1em;
   margin-bottom: 10px;
+}
+
+@media (max-width: 769px) {
+  .wrapper {
+    margin-top: 0px;
+  }
 }
