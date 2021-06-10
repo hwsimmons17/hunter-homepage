@@ -35,20 +35,18 @@ const Header = () => {
             <Link href="/">Hunter Simmons</Link>
           </Navbar.Brand>
           <Nav className={styles.link}>
-            <Link href="/#summary">
-              <a className={styles.linkChild}>Summary</a>
-            </Link>
             <Link href="/#blog" className={styles.linkChild}>
               <a className={styles.linkChild}>Blog</a>
-            </Link>
-            <Link href="/#socials" className={styles.linkChild}>
-              <a className={styles.linkChild}>Socials</a>
             </Link>
             <Link href="/#timeline" className={styles.linkChild}>
               <a className={styles.linkChild} style={{ marginRight: "10px" }}>
                 Timeline
               </a>
             </Link>
+            <Link href="/#socials" className={styles.linkChild}>
+              <a className={styles.linkChild}>Socials</a>
+            </Link>
+
             <Button
               variant="outline-primary"
               onClick={handleClick}

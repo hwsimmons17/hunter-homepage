@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.header {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.date {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
