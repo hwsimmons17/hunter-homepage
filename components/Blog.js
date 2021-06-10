@@ -23,7 +23,10 @@ const Blog = () => {
           }}
         >
           {blogData.map((item) => (
-            <Card style={{ width: "600px", margin: "20px" }} key={item.slug}>
+            <Card
+              style={{ width: "80vw", margin: "20px", maxWidth: "600px" }}
+              key={item.slug}
+            >
               <Card.Body>
                 <Card.Title>
                   {" "}

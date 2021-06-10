@@ -19,25 +19,21 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-
       <Element name="welcome" id="welcome">
         <TopHero />
       </Element>
-
       <Element name="blog" id="blog">
         <Blog />
       </Element>
-
       <Element name="timeline" id="timeline">
         <Timeline />
       </Element>
-
       <Element name="contact" id="contact">
         <Contact />
       </Element>
       <Element name="socials" id="socials">
         <Socials />
-      </Element>
+      </Element>{" "}
     </>
   );
 }

@@ -31,8 +31,9 @@
   .header {
     font-size: 2.5em;
     margin-bottom: 40px;
+    width: 300px;
   }
   .wrapper {
-    margin: 30x;
+    margin: 30px;
   }
 }
