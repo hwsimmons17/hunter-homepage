@@ -1,5 +1,14 @@
-import { Navbar, Nav, NavDropdown, MenuItem, NavItem } from "react-bootstrap";
-import { Link, scroller } from "react-scroll";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  MenuItem,
+  NavItem,
+  Button,
+} from "react-bootstrap";
+import Link from "next/link";
+
+import styles from "../styles/Tester.module.css";
 
 const Tester = () => {
   return (
@@ -17,30 +26,22 @@ const Tester = () => {
       />
       <Navbar.Collapse className="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Link to="home">
-            <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
-              Home
-            </Nav.Link>
+          <Link href="/#blog">
+            <a className={styles.link}>Blog</a>
           </Link>
-          <Link to="socials" offset={-270}>
-            <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
-              Summary
-            </Nav.Link>
+          <Link href="/#timeline">
+            <a className={styles.link}>Timeline</a>
           </Link>
-          <Link to="timeline" offset={-270}>
-            <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
-              Socials
-            </Nav.Link>
+          <Link href="/#socials">
+            <a className={styles.link}>Socials</a>
           </Link>
-          <Link to="about" offset={-250}>
-            <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
-              Timeline
-            </Nav.Link>
-          </Link>
-          <Link to="contact">
-            <Nav.Link href="#" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
+          <Link href="/#contact">
+            <Button
+              variant="outline-primary"
+              style={{ width: "150px", margin: "auto" }}
+            >
               Contact Me
-            </Nav.Link>
+            </Button>
           </Link>
         </Nav>
       </Navbar.Collapse>

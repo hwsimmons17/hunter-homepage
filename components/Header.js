@@ -47,13 +47,11 @@ const Header = () => {
               <a className={styles.linkChild}>Socials</a>
             </Link>
 
-            <Button
-              variant="outline-primary"
-              onClick={handleClick}
-              className={styles.button}
-            >
-              Contact Me
-            </Button>
+            <Link href="/#contact">
+              <Button variant="outline-primary" className={styles.button}>
+                Contact Me
+              </Button>
+            </Link>
           </Nav>
         </Navbar>
       </Container>
