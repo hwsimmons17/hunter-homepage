@@ -7,10 +7,10 @@ const NotLoggedIn = () => {
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
       <h1 style={{ margin: "15px", fontSize: "4em" }}>Admin Page</h1>
-      <h2 style={{ margin: "20px", fontSize: "2em" }}>
+      <h2 style={{ margin: "20px", fontSize: "1.7em" }}>
         This is a page for me to edit/post my blogs
       </h2>
-      <Card style={{ width: "30rem", marginBottom: "30px" }}>
+      <Card style={{ width: "30rem", margin: "180px", marginBottom: "310px" }}>
         <Card.Body>
           <Card.Title>Login with Google</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">

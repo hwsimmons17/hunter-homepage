@@ -3,6 +3,7 @@ import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/client";
 
 import NotLoggedIn from "../components/Admin/NotLoggedIn";
+import User from "../components/Admin/User";
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -19,12 +20,8 @@ export default function Home() {
       </Head>
 
       {!session && <NotLoggedIn />}
-      {session && (
-        <>
-          <h1>Signed in as{session.user.email}</h1>
-          <p>You can now access the super secret pages</p>
-          <button onClick={signOut}>Sign out</button>
-        </>
+      {session && session.user.email !== "hunterwilliamsimmons@gmail.com" && (
+        <User />
       )}
     </>
   );
