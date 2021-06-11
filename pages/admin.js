@@ -2,6 +2,8 @@ import Link from "next/link";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/client";
 
+import NotLoggedIn from "../components/Admin/NotLoggedIn";
+
 export default function Home() {
   const [session, loading] = useSession();
 
@@ -16,12 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      {!session && (
-        <>
-          <h1>Not signed in</h1>
-          <button onClick={signIn}>Sign In</button>
-        </>
-      )}
+      {!session && <NotLoggedIn />}
       {session && (
         <>
           <h1>Signed in as{session.user.email}</h1>
