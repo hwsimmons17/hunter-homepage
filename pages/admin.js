@@ -19,14 +19,15 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-
+      {/* 
       {!session && <NotLoggedIn />}
       {session && session.user.email !== "hunterwilliamsimmons@gmail.com" && (
         <User />
       )}
       {session && session.user.email === "hunterwilliamsimmons@gmail.com" && (
         <Admin />
-      )}
+      )} */}
+      <Admin />
     </>
   );
 }
