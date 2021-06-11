@@ -4,6 +4,7 @@ import { signIn, signOut, useSession } from "next-auth/client";
 
 import NotLoggedIn from "../components/Admin/NotLoggedIn";
 import User from "../components/Admin/User";
+import Admin from "../components/Admin/Admin";
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -22,6 +23,9 @@ export default function Home() {
       {!session && <NotLoggedIn />}
       {session && session.user.email !== "hunterwilliamsimmons@gmail.com" && (
         <User />
+      )}
+      {session && session.user.email === "hunterwilliamsimmons@gmail.com" && (
+        <Admin />
       )}
     </>
   );
