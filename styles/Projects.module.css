@@ -1,0 +1,21 @@
+.header {
+  font-size: 4em;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.h2tag {
+  color: #7a7676;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+@media (max-width: 769px) {
+  .header {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+}

@@ -6,7 +6,7 @@ import parseISO from "date-fns/parseISO";
 
 import { blogData } from "../../Assets/blogData";
 
-const Admin = () => {
+const Admin = ({ data }) => {
   return (
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
@@ -15,6 +15,7 @@ const Admin = () => {
       <h2 style={{ margin: "20px", fontSize: "1.7em" }}>Welcome Hunter</h2>
       <h2>New Blog</h2>
       <h2>Edit old blogs</h2>
+      <p>{data[0].title}</p>
       <div
         style={{
           display: "flex",

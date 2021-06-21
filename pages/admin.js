@@ -6,9 +6,9 @@ import NotLoggedIn from "../components/Admin/NotLoggedIn";
 import User from "../components/Admin/User";
 import Admin from "../components/Admin/Admin";
 
-export default function Home() {
+export default function Home({ data }) {
   const [session, loading] = useSession();
-
+  console.log(data);
   return (
     <>
       <Head>
@@ -19,15 +19,28 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      {/* 
+
       {!session && <NotLoggedIn />}
       {session && session.user.email !== "hunterwilliamsimmons@gmail.com" && (
         <User />
       )}
       {session && session.user.email === "hunterwilliamsimmons@gmail.com" && (
         <Admin />
-      )} */}
-      <Admin />
+      )}
+      {/* <Admin data={data} /> */}
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const res = await fetch("http://hunterwsimmons.com/api/posts", {
+    method: "GET",
+  });
+  const { data } = await res.json();
+
+  return {
+    props: {
+      data,
+    }, // will be passed to the page component as props
+  };
 }

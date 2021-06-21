@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
-
+import Projects from "../components/Projects";
 import Socials from "../components/Socials";
 import Timeline from "../components/Timeline";
 import TopHero from "../components/Welcome";
@@ -28,12 +28,15 @@ export default function Home() {
       <Element name="timeline" id="timeline">
         <Timeline />
       </Element>
+      <Element name="projects" id="projects">
+        <Projects />
+      </Element>
       <Element name="contact" id="contact">
         <Contact />
       </Element>
       <Element name="socials" id="socials">
         <Socials />
-      </Element>{" "}
+      </Element>
     </>
   );
 }
